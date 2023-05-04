@@ -36,7 +36,7 @@ function kyleDriving(){
   
   if(questionTwoGuess === 't' || questionTwoGuess === 'true'){
     alert(`True! Kyle drove over a million miles spanning over a decade as a Truck Driver. Sommetimes averaging 500 miles a day `);
-     numCorrect++;
+    numCorrect++;
   
   } else if (questionTwoGuess === 'f' || questionTwoGuess === 'false'){
     alert(`Wrong! Kyle drove over a million miles spanning over a decade as a Truck Driver. Sometimes averaging 500 miles a day`);
@@ -46,15 +46,21 @@ function kyleDriving(){
 
 kyleDriving();
 
-let questionThreeGuess = prompt(`Kyle has completed two marathons? True (T) or False? (F)`).toLowerCase();
+function kyleRuns(){
 
-if(questionThreeGuess === 't' || questionThreeGuess === 'true'){
-  alert(`False! Kyle hates running`);
-  numCorrect++;
+  let questionThreeGuess = prompt(`Kyle has completed two marathons? True (T) or False? (F)`).toLowerCase();
+  
+  if(questionThreeGuess === 't' || questionThreeGuess === 'true'){
+    alert(`False! Kyle hates running`);
+    numCorrect++;
+  
+  } else if (questionThreeGuess === 'f' || questionThreeGuess === 'false'){
+    alert(`True! Kyle hates running`);
+  }
 
-} else if (questionThreeGuess === 'f' || questionThreeGuess === 'false'){
-  alert(`True! Kyle hates running`);
 }
+
+kyleRuns();
 
 let questionFourGuess = prompt(`Kyle lives in Washington DC? True (T) or False? (F)`).toLowerCase();
 
