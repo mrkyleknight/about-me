@@ -30,16 +30,21 @@ function kyleBirds(){
 kyleBirds();
 
 
+function kyleDriving(){
 
-let questionTwoGuess = prompt(`Kyle has driven over a Million miles? True (T) or False? (F)`).toLowerCase();
+  let questionTwoGuess = prompt(`Kyle has driven over a Million miles? True (T) or False? (F)`).toLowerCase();
+  
+  if(questionTwoGuess === 't' || questionTwoGuess === 'true'){
+    alert(`True! Kyle drove over a million miles spanning over a decade as a Truck Driver. Sommetimes averaging 500 miles a day `);
+     numCorrect++;
+  
+  } else if (questionTwoGuess === 'f' || questionTwoGuess === 'false'){
+    alert(`Wrong! Kyle drove over a million miles spanning over a decade as a Truck Driver. Sometimes averaging 500 miles a day`);
+  }
 
-if(questionTwoGuess === 't' || questionTwoGuess === 'true'){
-  alert(`True! Kyle drove over a million miles spanning over a decade as a Truck Driver. Sommetimes averaging 500 miles a day `);
-   numCorrect++;
-
-} else if (questionTwoGuess === 'f' || questionTwoGuess === 'false'){
-  alert(`False! Kyle drove over a million miles spanning over a decade as a Truck Driver. Sommetimes averaging 500 miles a day`);
 }
+
+kyleDriving();
 
 let questionThreeGuess = prompt(`Kyle has completed two marathons? True (T) or False? (F)`).toLowerCase();
 
