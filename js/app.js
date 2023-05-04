@@ -15,17 +15,20 @@ alert(`Welcome to my site ${userName}! Lets play some trivia about Kyle Knight!
 
 let numCorrect = 0;
 
-let questionOneGuess = prompt('Does Kyle own birds? True (T) or False (F)?').toLowerCase();
+function kyleBirds(){
 
+  let questionOneGuess = prompt('Does Kyle own birds? True (T) or False (F)?').toLowerCase();
+  if(questionOneGuess === 't' || questionOneGuess === 'true'){
+    alert('True!. Kyle has three birds, a Cockatiel, Lovebird and a Green Conure');
+    numCorrect++;
+  } else if(questionOneGuess === 'f' || questionOneGuess === 'false'){
+    alert(`False! Kyle has three birds, a Cockatiel, Lovebird and a Green Conure`);
+  }
 
-
-if(questionOneGuess === 't' || questionOneGuess === 'true'){
-  alert('True!. Kyle has three birds, a Cockatiel, Lovebird and a Green Conure');
-   numCorrect++;
-
-} else if(questionOneGuess === 'f' || questionOneGuess === 'false'){
-  alert(`False! Kyle has three birds, a Cockatiel, Lovebird and a Green Conure`);
 }
+
+kyleBirds();
+
 
 
 let questionTwoGuess = prompt(`Kyle has driven over a Million miles? True (T) or False? (F)`).toLowerCase();
