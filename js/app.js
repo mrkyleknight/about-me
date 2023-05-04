@@ -97,7 +97,7 @@ const correct2ndAnswers = [31, 32, 33];
 let attempts2 = 6;
 
 while (attempts2 > 0) {
-  const guess = prompt("Guess Kyle's Favorite Numbers? between 1 and 100. You have " + attempts2 + " attempts remaining.");
+  const guess = prompt("Guess Kyle's Lucky Numbers? between 1 and 100. You have " + attempts2 + " attempts remaining.");
 
   if (isNaN(guess)) {
     alert("Invalid input. Please enter a number between 1 and 100.");
