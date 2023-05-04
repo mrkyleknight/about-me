@@ -102,15 +102,14 @@ while (attempts2 > 0) {
   if (isNaN(guess)) {
     alert("Invalid input. Please enter a number between 1 and 100.");
   } else if (correct2ndAnswers.includes(Number(guess))) {
-    alert("Congratulations! You guessed the correct number.");
+    alert("Congratulations! You guessed one of my lucky numbers. 31, 32, 33");
      numCorrect++;
     break;
-  } else if (guess < Math.min(...correct2ndAnswers)) {
+  } else if (guess < correct2ndAnswers) {
     alert("Too low. Try again.");
-  } else if (guess > Math.max(...correct2ndAnswers)) {
+  } else if (guess > correct2ndAnswers) {
     alert("Too high. Try again.");
-  } else {
-    alert("Sorry, your guess was not correct. Please try again.");
+  
   }
 
   attempts2--;
