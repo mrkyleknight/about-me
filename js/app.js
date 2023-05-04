@@ -129,27 +129,33 @@ kyleAge();
 const correct2ndAnswers = [31, 32, 33];
 let attempts2 = 6;
 
-while (attempts2 > 0) {
-  const guess = prompt("Guess Kyle's Lucky Numbers? between 1 and 100. You have " + attempts2 + " attempts remaining.");
+function kyleNumber(){
 
-  if (isNaN(guess)) {
-    alert("Invalid input. Please enter a number between 1 and 100.");
-  } else if (correct2ndAnswers.includes(Number(guess))) {
-    alert("Congratulations! You guessed one of my lucky numbers. 31, 32, 33");
-    numCorrect++;
-    break;
-  } else if (guess < correct2ndAnswers) {
-    alert("Too low. Try again.");
-  } else if (guess > correct2ndAnswers) {
-    alert("Too high. Try again.");
-
+  while (attempts2 > 0) {
+    const guess = prompt("Guess Kyle's Lucky Numbers? between 1 and 100. You have " + attempts2 + " attempts remaining.");
+  
+    if (isNaN(guess)) {
+      alert("Invalid input. Please enter a number between 1 and 100.");
+    } else if (correct2ndAnswers.includes(Number(guess))) {
+      alert("Congratulations! You guessed one of my lucky numbers. 31, 32, 33");
+      numCorrect++;
+      break;
+    } else if (guess < correct2ndAnswers) {
+      alert("Too low. Try again.");
+    } else if (guess > correct2ndAnswers) {
+      alert("Too high. Try again.");
+  
+    }
+  
+    attempts2--;
+  }
+  
+  if (attempts2 == 0) {
+    alert("Sorry, you ran out of attempts. The correct numbers were: " + correct2ndAnswers.join(", ") + ".");
   }
 
-  attempts2--;
 }
 
-if (attempts2 == 0) {
-  alert("Sorry, you ran out of attempts. The correct numbers were: " + correct2ndAnswers.join(", ") + ".");
-}
+kyleNumber();
 
 alert(`You got ${numCorrect} out of 7 correct!`);
