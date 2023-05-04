@@ -62,15 +62,21 @@ function kyleRuns(){
 
 kyleRuns();
 
-let questionFourGuess = prompt(`Kyle lives in Washington DC? True (T) or False? (F)`).toLowerCase();
+function kyleHome(){
 
-if(questionFourGuess === 't' || questionFourGuess === 'true'){
-  alert(`False! Kyle lives in Washingston State`);
-   numCorrect++;
+  let questionFourGuess = prompt(`Kyle lives in Washington DC? True (T) or False? (F)`).toLowerCase();
+  
+  if(questionFourGuess === 't' || questionFourGuess === 'true'){
+    alert(`False! Kyle lives in Washington State`);
+     numCorrect++;
+  
+  } else if (questionFourGuess === 'f' || questionFourGuess === 'false'){
+    alert(`True! Kyle lives in Washington State`);
+  }
 
-} else if (questionFourGuess === 'f' || questionFourGuess === 'false'){
-  alert(`True! Kyle lives in Washington State`);
 }
+
+kyleHome();
 
 let questionFiveGuess = prompt(`Kyle prefers Xbox over Playstation? True (T) or False? (F)`).toLowerCase();
 
