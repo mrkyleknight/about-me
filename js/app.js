@@ -78,15 +78,22 @@ function kyleHome(){
 
 kyleHome();
 
-let questionFiveGuess = prompt(`Kyle prefers Xbox over Playstation? True (T) or False? (F)`).toLowerCase();
 
-if(questionFiveGuess === 't' || questionFiveGuess === 'true'){
-  alert(`True! Kyle has a 16 year old Xbox account,and games every weekend`);
-   numCorrect++;
+function kyleGames(){
 
-} else if (questionFiveGuess === 'f' || questionFiveGuess === 'false'){
-  alert(`False! Kyle hates Playstation, prefers Xbox`);
+  let questionFiveGuess = prompt(`Kyle prefers Xbox over Playstation? True (T) or False? (F)`).toLowerCase();
+  
+  if(questionFiveGuess === 't' || questionFiveGuess === 'true'){
+    alert(`True! Kyle has a 16 year old Xbox account,and games every weekend`);
+     numCorrect++;
+  
+  } else if (questionFiveGuess === 'f' || questionFiveGuess === 'false'){
+    alert(`False! Kyle hates Playstation, prefers Xbox`);
+  }
+
 }
+
+kyleGames();
 
 const correctAnswer = 31;
 let attempts = 4;
